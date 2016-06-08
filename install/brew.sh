@@ -2,6 +2,16 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap caskroom/cask
 
+cask_apps=(
+  android_studio
+  slack
+  intellij-idea
+  google-chrome
+  java
+)
+
+brew cask install "${cask_apps[*]}"
+
 apps=(
   git
   vim
@@ -13,11 +23,4 @@ apps=(
 
 brew install "${apps[*]}"
 
-cask_apps=(
-  android_studio
-  slack
-  intellij-idea
-  google-chrome
-)
 
-brew cask install "${cask_apps[*]}"

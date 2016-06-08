@@ -8,8 +8,9 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 # link files
 
-ln -s "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
-ln -s "$DOTFILES_DIR/.vim" "$HOME/.vim"
+ln -s "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
+ln -s "$DOTFILES_DIR/vimrc" "$HOME/.vimrc"
+ln -s "$DOTFILES_DIR/vim" "$HOME/.vim"
 
 mkdir "$HOME/.config/"
 ln -s "HOME/.vim" "$HOME/.config/nvim/"
@@ -19,3 +20,4 @@ ln -s "$HOME/.vimrc" "$HOME/.config/nvim/init.vim"
 
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/oh-my-zsh.sh"
+. "$DOTFILES_DIR/install/vundle.sh"
