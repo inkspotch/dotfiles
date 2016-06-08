@@ -13,7 +13,7 @@ ln -s "$DOTFILES_DIR/vimrc" "$HOME/.vimrc"
 ln -s "$DOTFILES_DIR/vim" "$HOME/.vim"
 
 mkdir "$HOME/.config/"
-ln -s "HOME/.vim" "$HOME/.config/nvim/"
+ln -s "$HOME/.vim" "$HOME/.config/nvim"
 ln -s "$HOME/.vimrc" "$HOME/.config/nvim/init.vim"
 
 # install
