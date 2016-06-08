@@ -2,25 +2,16 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap caskroom/cask
 
-cask_apps=(
-  android_studio
-  slack
-  intellij-idea
-  google-chrome
-  java
-)
+brew cask install android-studio
+brew cask install slack
+brew cask install intellij-idea
+brew cask install google-chrome
+brew cask install java
 
-brew cask install "${cask_apps[*]}"
-
-apps=(
-  git
-  vim
-  dex2jar
-  apktool
-  zsh
-  mercurial
-)
-
-brew install "${apps[*]}"
-
+brew install git
+brew install vim
+brew install dex2jar
+brew install apktool
+brew install zsh
+brew install mercurial
 
