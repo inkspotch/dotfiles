@@ -22,3 +22,5 @@ ln -s "$HOME/.vimrc" "$HOME/.config/nvim/init.vim"
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/oh-my-zsh.sh"
 . "$DOTFILES_DIR/install/vundle.sh"
+
+. "$DOTFILES_DIR/install/aliases.sh"
