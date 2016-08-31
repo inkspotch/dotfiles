@@ -16,6 +16,7 @@ rm -fr "$HOME/.vim"
 ln -s "$DOTFILES_DIR/vim" "$HOME/.vim"
 ln -s "$DOTFILES_DIR/vimrc" "$HOME/.vimrc"
 
+mkdir -p "$HOME/.config"
 ln -s "$HOME/.vim" "$HOME/.config/nvim"
 ln -s "$HOME/.vimrc" "$HOME/.config/nvim/init.vim"
 
