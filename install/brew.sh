@@ -13,6 +13,3 @@ brew install vim
 brew install dex2jar
 brew install apktool
 brew install zsh
-brew install python
-brew install mercurial
-
