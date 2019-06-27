@@ -5,7 +5,7 @@ brew tap caskroom/cask
 brew cask install android-studio
 brew cask install slack
 brew cask install intellij-idea
-brew cask install google-chrome
+brew cask install firefox
 brew cask install java
 
 brew install git
