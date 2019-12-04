@@ -11,6 +11,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-endwise'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
@@ -29,3 +30,5 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
 " NERDTree end config
+
+let g:airline#extensions#tabline#enabled = 1
