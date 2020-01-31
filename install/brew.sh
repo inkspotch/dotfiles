@@ -9,6 +9,7 @@ brew cask install firefox
 brew cask install java
 
 brew install git
+brew install git-gui
 brew install vim
 brew install dex2jar
 brew install apktool
