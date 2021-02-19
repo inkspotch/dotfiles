@@ -1,17 +1,18 @@
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 
-brew cask install android-studio
-brew cask install slack
-brew cask install intellij-idea
+brew install java
+brew install android-studio
+#brew install slack
+brew install intellij-idea
+brew install appcode
 brew cask install firefox
-brew cask install java
 
 brew install git
 brew install git-gui
 brew install vim
+brew install nvim
 brew install dex2jar
 brew install apktool
 brew install zsh
-brew install mitmproxy

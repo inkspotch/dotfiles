@@ -1,19 +1,24 @@
+let g:mapleader = ","
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin("~/.config/vim/plugged")
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/NERDTree'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-bundler'
-Plugin 'slim-template/vim-slim'
-Plugin 'tpope/vim-endwise'
-Plugin 'vim-airline/vim-airline'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'tpope/vim-bundler', { 'for': 'ruby' }
+Plug 'tpope/vim-sensible'
+Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-endwise'
+Plug 'vim-airline/vim-airline'
+Plug 'yegappan/taglist'
 
-call vundle#end()
+Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'tpope/vim-bundler', { 'for': 'ruby' }
+
+call plug#end()
 
 filetype plugin indent on
 
@@ -23,11 +28,14 @@ set shiftwidth=2
 
 " NERDTree config
 
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+nnoremap <Leader>gf :NERDTreeFind<CR>
+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeStatusline = ''
 
 " NERDTree end config
 
