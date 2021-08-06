@@ -58,10 +58,6 @@ export PATH="/usr/local/opt/android-sdk/platform-tools:/usr/local/opt/android-sd
 
 source $ZSH/oh-my-zsh.sh
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

@@ -2,7 +2,6 @@
 
 brew tap homebrew/cask
 
-brew install java
 brew install android-studio
 brew install slack
 brew install intellij-idea
