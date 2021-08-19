@@ -12,7 +12,7 @@ mkdir -p "$HOME/.config/nvim"
 # link files
 
 ln -s "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
-ln -s "$DOTFILES_DIR/.vimrc" "$HOME/.config/nvim/init.vim"
+ln -s "$DOTFILES_DIR/vimrc" "$HOME/.config/nvim/init.vim"
 
 # install
 
