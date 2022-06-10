@@ -19,6 +19,5 @@ ln -s "$DOTFILES_DIR/vimrc" "$HOME/.config/nvim/init.vim"
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/oh-my-zsh.sh"
 . "$DOTFILES_DIR/install/plug.sh"
-
 . "$DOTFILES_DIR/install/aliases.sh"
 . "$DOTFILES_DIR/install/git_setup.sh"
