@@ -13,6 +13,7 @@ mkdir -p "$HOME/.config/nvim"
 
 ln -s "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/vimrc" "$HOME/.config/nvim/init.vim"
+ln -s "$DOTFILES_DIR/tmux.conf" "$HOME/.tmux.conf"
 
 # install
 

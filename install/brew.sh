@@ -17,3 +17,5 @@ brew install nvim
 brew install dex2jar
 brew install apktool
 brew install zsh
+brew install nvm
+brew install --cask docker
