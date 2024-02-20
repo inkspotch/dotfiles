@@ -19,3 +19,4 @@ brew install apktool
 brew install zsh
 brew install nvm
 brew install --cask docker
+brew install gh
