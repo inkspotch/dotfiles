@@ -2,11 +2,13 @@ let g:mapleader = ","
 set nocompatible
 filetype off
 
-call plug#begin("~/.config/vim/plugged")
+call plug#begin("~/.config/nvim/plugged")
 
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-bundler', { 'for': 'ruby' }
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
+Plug 'aymericbeaumet/vim-symlink'
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-endwise'
 Plug 'vim-airline/vim-airline'
@@ -15,8 +17,7 @@ Plug 'yegappan/taglist'
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'tpope/vim-bundler', { 'for': 'ruby' }
+Plug 'vim-scripts/c.vim'
 
 call plug#end()
 
@@ -40,3 +41,8 @@ let g:NERDTreeStatusline = ''
 " NERDTree end config
 
 let g:airline#extensions#tabline#enabled = 1
+
+" Search and replace
+set ignorecase
+set smartcase
+set inccommand = "split"

@@ -1,14 +1,17 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install firefox
+brew install waterfox
 brew install thunderbird
 brew install android-studio
 brew install slack
+brew install appflowy
 brew install intellij-idea
-brew install appcode
-brew install postman
+brew install bruno
 brew install cloudflare-warp
 brew install signal
+brew install alfred
+brew install calibre
+brew install gimp
 
 brew install git
 brew install git-gui

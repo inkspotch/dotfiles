@@ -1,0 +1,54 @@
+[core]
+	editor = /opt/homebrew/bin/vim
+	excludesfile = /Users/brad/.gitignore_global
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+	sw = switch
+	up = !git fetch origin main:main && git rebase main
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[pull]
+	rebase = true
+[push]
+	default = simple
+  autoSetupRemote = true
+  followTags = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[rebase]
+	updateRefs = true
+  autoSquash = true
+  autoStash = true
+[commit]
+  verbose = true
+[help]
+  autocorrect = prompt
+[user]
+	name = Brad Holmes
+	email = inkspotch@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[init]
+	defaultBranch = main

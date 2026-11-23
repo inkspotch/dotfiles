@@ -14,11 +14,10 @@ mkdir -p "$HOME/.config/nvim"
 ln -s "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/vimrc" "$HOME/.config/nvim/init.vim"
 ln -s "$DOTFILES_DIR/tmux.conf" "$HOME/.tmux.conf"
+ln -s "$DOTFILES_DIR/gitconfig" "$HOME/.gitconfig"
 
 # install
 
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/oh-my-zsh.sh"
-. "$DOTFILES_DIR/install/plug.sh"
-. "$DOTFILES_DIR/install/aliases.sh"
 . "$DOTFILES_DIR/install/git_setup.sh"
